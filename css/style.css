@@ -1,0 +1,108 @@
+ul{
+    list-style-type: none;
+    width: 500px;
+}
+.btn-danger{
+    height: 45px;
+    border-radius: 0;
+}
+.main-image{
+    background: url('../images/main.jpg');
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+li{
+    position: relative;
+}
+.active::after{
+    content: '';
+    height: 2px;
+    width: 20px;
+    background-color: red;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+}
+.services{
+    background-color: rgba(236, 240, 241, 0.48);
+}
+.about-us h1{
+    font-size: 50px;
+}
+
+i::before{
+    font-size: 40px;
+}
+.staff__avatar{
+    background: url('../images/avatar.png');
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+}
+.footer-image{
+    background: url('../images/footer.jpg');
+    height: 550px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.footer__text{
+   font-size: 40px;
+}
+.footer__input{
+    width: 350px;
+    float: left;
+}
+.footer__input__1{
+    background-color: transparent;
+    border-left-style: none;
+    border-right-style: none;
+    border-top-style: none;
+}
+.footer__input__1::placeholder{
+    color: white;
+}
+
+.footer1{
+    background-color: #272B2E;
+    height: 300px;
+}
+.footer__textarea{
+    background-color: transparent;
+}
+.footer__textarea::placeholder{
+    color: white;
+}
+.last__button{
+   float: right;
+   margin-right: 248px;
+}
+@media all and (max-width:770px){
+    .team__staff{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer__text{
+        font-size: 20px;
+     }
+     .navbar__menu{
+         display: flex;
+         flex-direction: column;
+     }
+     .active::after{
+        content: '';
+        height: 2px;
+        width: 20px;
+        background-color: red;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+     }
+     .first__btn{
+         padding: 0;
+     }
+     
+}
+
